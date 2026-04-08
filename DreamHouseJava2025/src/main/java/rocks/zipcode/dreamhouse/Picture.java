@@ -13,8 +13,11 @@ package rocks.zipcode.dreamhouse;
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
+    private myRectangle ground;
+    private myRectangle pillar1;
+    private myRectangle pillar2;
+    private myRectangle pillar3;
+    private myRectangle building3;
     private Triangle roof;
     private Circle sun;
 
@@ -31,28 +34,80 @@ public class Picture
      */
     public void draw()
     {
-        wall = new Square();
-        wall.moveVertical(80);
-        wall.changeSize(100);
-        wall.makeVisible();
+        ground = new myRectangle();
+        ground.changeColor("green");
+        ground.moveHorizontal(-100);
+        ground.moveVertical(390);
+        ground.changeSize(1000, 90);
+        ground.makeVisible();
 
-        window = new Square();
-        window.changeColor("black");
-        window.moveHorizontal(20);
-        window.moveVertical(100);
-        window.makeVisible();
+        pillar1 = new myRectangle();
+        pillar1.changeColor("white");
+        pillar1.moveHorizontal(230);
+        pillar1.moveVertical(210);
+        pillar1.changeSize(35, 170);
+        pillar1.makeVisible();
+
+        pillar1 = new myRectangle();
+        pillar1.changeColor("white");
+        pillar1.moveHorizontal(290);
+        pillar1.moveVertical(210);
+        pillar1.changeSize(35, 170);
+        pillar1.makeVisible();
+
+        pillar1 = new myRectangle();
+        pillar1.changeColor("white");
+        pillar1.moveHorizontal(350);
+        pillar1.moveVertical(210);
+        pillar1.changeSize(35, 170);
+        pillar1.makeVisible();
+
+        pillar2 = new myRectangle();
+        pillar2.changeColor("white");
+        pillar2.moveHorizontal(430);
+        pillar2.moveVertical(210);
+        pillar2.changeSize(35, 170);
+        pillar2.makeVisible();
+
+        pillar2 = new myRectangle();
+        pillar2.changeColor("white");
+        pillar2.moveHorizontal(490);
+        pillar2.moveVertical(210);
+        pillar2.changeSize(35, 170);
+        pillar2.makeVisible();
+
+        pillar2 = new myRectangle();
+        pillar2.changeColor("white");
+        pillar2.moveHorizontal(550);
+        pillar2.moveVertical(210);
+        pillar2.changeSize(35, 170);
+        pillar2.makeVisible();
+
+        building3 = new myRectangle();
+        building3.changeColor("white");
+        building3.moveHorizontal(207);
+        building3.moveVertical(373);
+        building3.changeSize(400, 25);
+        building3.makeVisible();
 
         roof = new Triangle();
-        roof.changeSize(50, 140);
-        roof.moveHorizontal(60);
-        roof.moveVertical(70);
+        roof.changeSize(100, 400);
+        roof.moveHorizontal(417);
+        roof.moveVertical(155);
         roof.makeVisible();
 
         sun = new Circle();
         sun.changeColor("yellow");
-        sun.moveHorizontal(180);
-        sun.moveVertical(-10);
+        sun.moveHorizontal(0);
+        sun.moveVertical(0);
         sun.changeSize(60);
+        sun.makeVisible();
+
+        sun = new Circle();
+        sun.changeColor("white");
+        sun.moveHorizontal(0);
+        sun.moveVertical(15);
+        sun.changeSize(45);
         sun.makeVisible();
     }
 

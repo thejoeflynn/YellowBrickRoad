@@ -1,6 +1,6 @@
 package rocks.zipcode.dreamhouse;
 
-import java.awt.*;
+import java.awt.Rectangle;
 
 /**
  * A square that can be manipulated and that draws itself on a canvas.
