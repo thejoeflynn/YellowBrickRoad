@@ -117,6 +117,27 @@ public class Picture
         pillar2.changeSize(35, 170);
         pillar2.makeVisible();
 
+        roof = new Triangle();
+        roof.changeColor("blue");
+        roof.changeSize(100, 165);
+        roof.moveHorizontal(417);
+        roof.moveVertical(410);
+        roof.makeVisible();
+
+        roof = new Triangle();
+        roof.changeColor("pillarwhite");
+        roof.changeSize(100, 100);
+        roof.moveHorizontal(417);
+        roof.moveVertical(410);
+        roof.makeVisible();
+
+        building3 = new myRectangle();
+        building3.changeColor("blue");
+        building3.moveHorizontal(195);
+        building3.moveVertical(390);
+        building3.changeSize(430, 15);
+        building3.makeVisible();
+
         building3 = new myRectangle();
         building3.changeColor("pillarwhite");
         building3.moveHorizontal(207);
@@ -129,7 +150,7 @@ public class Picture
         roof.changeSize(100, 400);
         roof.moveHorizontal(417);
         roof.moveVertical(155);
-        roof.makeVisible();
+        roof.makeVisible(); 
 
         sun = new Circle();
         sun.changeColor("sunyellow");
